@@ -1,0 +1,66 @@
+# 🚀 DeepSeek-R1 AI Project Roadmap
+
+A curated collection of Generative AI projects using **DeepSeek-R1**, **Ollama**, and **LangChain**. This roadmap transitions from simple CLI tools to advanced RAG (Retrieval-Augmented Generation) applications.
+
+---
+
+## 🟢 Beginner Projects (1–2 Hours)
+*Focus: Mastering the basics of LLM integration and prompting.*
+
+| Project | Description | Key Features |
+| :--- | :--- | :--- |
+| **CLI Chatbot** | A terminal-based personal assistant. | Basic chat loop, Ollama integration. |
+| **Error Explainer** | Paste a Python/Django error, get a simple fix. | System prompting, error parsing. |
+| **Notes Summarizer** | Turn long text files into bullet points. | Text processing, summarization chains. |
+| **To-Do Assistant** | Track tasks via the terminal. | Suggestions for productivity & reminders. |
+
+---
+
+## 🟡 Intermediate Projects (1–2 Days)
+*Focus: Knowledge retrieval (RAG) and document processing.*
+
+
+
+### 📑 PDF Q&A Bot 
+* **Tech Stack:** LangChain, FAISS, DeepSeek-R1.
+* **Goal:** Upload a PDF and ask questions about its content without copying/pasting text.
+
+### 📚 Document Summarizer
+* **Tech Stack:** PyPDF2, LangChain Summarization Chains.
+* **Goal:** Process multiple documents to extract chapter-wise summaries.
+
+### 💻 Code Helper
+* **Tech Stack:** Python, LangChain.
+* **Goal:** A tool that reads local script files and suggests bug fixes or adds comments.
+
+---
+
+## 🔵 Advanced Projects (2–7 Days)
+*Focus: Full-stack integration, persistent memory, and production-ready apps.*
+
+### 🌐 Web-based PDF Q&A
+* **Interface:** Flask or Django.
+* **Features:** Drag-and-drop PDF upload, chat history saved in a database, and a clean UI.
+
+### 🧠 AI Tutor for Students
+* **Logic:** Feed textbooks into a vector database (FAISS/ChromaDB).
+* **Features:** Generates practice quizzes based on specific chapters and tracks learning progress.
+
+### 🏢 Internal Company Assistant
+* **Logic:** Multi-document RAG with **Persistent Memory**.
+* **Features:** The bot remembers user preferences and provides answers based strictly on internal HR manuals or SOPs.
+
+---
+
+## 🛠️ Tech Stack Used
+* **LLM:** [DeepSeek-R1](https://ollama.com/library/deepseek-r1) (via Ollama)
+* **Orchestrator:** [LangChain](https://www.langchain.com/)
+* **Vector DB:** FAISS (Facebook AI Similarity Search)
+* **Environment:** Python 3.10+
+
+## 🚀 Getting Started
+1. **Install Ollama:** Download from ollama.com.
+2. **Pull the model:** `ollama pull deepseek-r1:1.5b`
+3. **Install dependencies:**
+   ```bash
+   pip install langchain langchain-community langchain-ollama faiss-cpu pypdf
